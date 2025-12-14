@@ -1,0 +1,67 @@
+
+.annee-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.mois {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.moisTexte {
+    text-align: center;
+    margin: 5px 0 10px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.grille-jours {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    text-align: center;
+}
+
+.jour-header {
+    font-weight: bold;
+    font-size: 0.8em;
+    padding-bottom: 5px;
+    color: #555;
+}
+
+.jour {
+    padding: 5px 0;
+    font-size: 0.9em;
+}
+
+.vide {
+    background: transparent;
+}
+
+.ferie:hover {
+    color: #c0392b;
+    transform: scale(1.1);
+    transition: 0.2s;   
+}
+
+@media (max-width: 900px) {
+    .annee-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .annee-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .annee-container {
+        grid-template-columns: 1fr;
+    }
+}

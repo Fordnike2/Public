@@ -1,0 +1,58 @@
+:root {
+    --duration: 0.75s;
+    --detailsPadding: 25px;
+    interpolate-size: allow-keywords;
+}
+summary {
+    cursor: pointer;
+    padding: 25px;
+    background-color: gray;
+    border-radius: 10px;
+    color: white;
+    margin:10px;
+    font-weight: bold;
+    font-size: 1.1em;
+
+    &:hover {
+        background-color: #34495e;
+    }
+
+    &::marker {
+        font-size: 1.0em;
+    }
+}
+details {
+    div {
+        padding: 10px var(--detailsPadding);
+        border-top: 1px solid #eee;
+        line-height: 1.5;
+        &:hover {
+            background-color: #f9f9f9;
+        }
+    }
+
+    span {
+        font-family: monospace;
+        font-weight: bold;
+        color: #0056b3;
+        margin-right: 15px;
+        display: inline-block;
+        min-width: 100px;
+    }
+
+    &::details-content {
+        opacity: 0;
+        block-size: 0;
+        overflow-y: clip;
+        transition:
+            /* paramètres de l'animation */
+            content-visibility var(--duration) allow-discrete,
+            opacity var(--duration),
+            block-size var(--duration);
+    }
+
+    &[open]::details-content {
+        opacity: 1;
+        block-size: auto;
+    }
+}

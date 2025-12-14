@@ -4,71 +4,598 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 2</title>
-    <link rel="stylesheet" href="css/global-variables.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="images\favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Calendrier</title>
+    <link rel="stylesheet" href="css/page2.css">
+    <link rel="stylesheet" href="css/General.css">
 </head>
 
 <body>
     <div class="page">
-
         <div class="header">
-            <img src="images\favicon.png" alt="logo" class="favicon">
-            <div class="menu">
-                <a href="index.html" class="menuItem ">Accueil</a>
-                <a href="page1.html" class="menuItem">Cybersécurité</a>
-                <a href="page2.html" class="menuItem selectedMenuItem">IA</a>
-                <a href="page3.html" class="menuItem">Web</a>
-                <a href="page4.html" class="menuItem">Réseaux informatiques</a>
-                <a href="about.html" class="menuItem">À propos</a>
-            </div>
-        </div>
-
-        <div class="main">
-            <div class="left_Aside ellipsis">
-                <h2>Fun Fact</h2>
-                <p>Le mot “bug” en informatique vient d’un vrai insecte. En 1947, un papillon coincé dans un ordinateur
-                    géant a provoqué une panne. Les ingénieurs l’ont retiré… et le nom est resté !</p>
-            </div>
-
-            <div class="content scrollSection">
-                <h1>Intelligence artificielle</h1>
-                <div class="ImagePage1" style="background-image: url('images/ai.png');"></div>
-                <p>L’intelligence artificielle est un domaine qui combine innovation, créativité et technologies
-                    avancées pour donner aux machines la capacité d’accomplir des tâches autrefois réservées aux
-                    humains. Aujourd’hui, l’IA se retrouve partout : dans nos téléphones, nos voitures, nos jeux, nos
-                    réseaux sociaux et même dans certains objets du quotidien. Elle analyse, propose, interprète et
-                    parfois prédit nos besoins avec une précision surprenante. Ce qui rend ce domaine si fascinant,
-                    c’est sa capacité à apprendre. Grâce à des algorithmes qui s’améliorent au fil du temps, une IA peut
-                    reconnaître des images, comprendre des phrases, ou prendre des décisions basées sur d’immenses
-                    quantités de données. Ce fonctionnement donne l’impression que les machines développent une forme de
-                    réflexion, même si elles ne font que suivre des modèles complexes. L’IA repousse sans cesse les
-                    limites du possible : voitures autonomes, robots intelligents, créations artistiques générées
-                    automatiquement, recommandations personnalisées… Chaque avancée ouvre la porte à de nouvelles idées
-                    et de nouveaux usages. C’est un domaine à la fois impressionnant et parfois mystérieux, qui reflète
-                    la manière dont l’innovation transforme notre quotidien et annonce les technologies de demain.
-                </p>
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yQLmgw3rClM?si=VFTDnBXDzOwhRkFR"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div class="right_Aside">
-                <div class="iconList">
-                    <i class="fa-icon fa-solid fa-shield-virus" title="Protection"></i>
-                    <i class="fa-icon fa-solid fa-lock" title="Sécurité"></i>
-                    <i class="fa-icon fa-solid fa-user-secret" title="Hacker"></i>
+            <div class="headerMenu">
+                <div class="siteIcon">
+                </div>
+                <div class="menu">
+                    <a href="index.html" class="menuItem ">Mosaique</a>
+                    <a href="page1.html" class="menuItem">Diaporama</a>
+                    <a href="page2.html" class="menuItem active">Calendrier</a>
+                    <a href="page3.html" class="menuItem">Cours CLG-420</a>
                 </div>
             </div>
+        </div>
+        <div class="main scroll">
+            <div class="annee-container">
+
+                <div class="mois">
+                    <div class="moisTexte">Janvier</div>
+                    <div class="grille-jours">
+                        <div class="jour-header">Dim</div>
+                        <div class="jour-header">Lun</div>
+                        <div class="jour-header">Mar</div>
+                        <div class="jour-header">Mer</div>
+                        <div class="jour-header">Jeu</div>
+                        <div class="jour-header">Ven</div>
+                        <div class="jour-header">Sam</div>
+
+                        <div class="vide"></div>
+                        <div class="vide"></div>
+                        <div class="vide"></div>
+                        <div class="vide"></div>
+
+                        <div class="jour ferie" title="Jour de l'An">1</div>
+                        <div class="jour ferie" title="Lendemain du Jour de l'An">2</div>
+                        <div class="jour">3</div>
+                        <div class="jour">4</div>
+                        <div class="jour">5</div>
+                        <div class="jour">6</div>
+                        <div class="jour">7</div>
+                        <div class="jour">8</div>
+                        <div class="jour">9</div>
+                        <div class="jour">10</div>
+                        <div class="jour">11</div>
+                        <div class="jour">12</div>
+                        <div class="jour">13</div>
+                        <div class="jour">14</div>
+                        <div class="jour">15</div>
+                        <div class="jour">16</div>
+                        <div class="jour">17</div>
+                        <div class="jour">18</div>
+                        <div class="jour">19</div>
+                        <div class="jour">20</div>
+                        <div class="jour">21</div>
+                        <div class="jour">22</div>
+                        <div class="jour">23</div>
+                        <div class="jour">24</div>
+                        <div class="jour">25</div>
+                        <div class="jour">26</div>
+                        <div class="jour">27</div>
+                        <div class="jour">28</div>
+                        <div class="jour">29</div>
+                        <div class="jour">30</div>
+                        <div class="jour">31</div>
+                    </div>
+                </div>
+
+                <div class="mois">
+                    <div class="moisTexte">Février</div>
+                    <div class="grille-jours">
+                        <div class="jour-header">Dim</div>
+                        <div class="jour-header">Lun</div>
+                        <div class="jour-header">Mar</div>
+                        <div class="jour-header">Mer</div>
+                        <div class="jour-header">Jeu</div>
+                        <div class="jour-header">Ven</div>
+                        <div class="jour-header">Sam</div>
+
+                        <div class="jour">1</div>
+                        <div class="jour">2</div>
+                        <div class="jour">3</div>
+                        <div class="jour">4</div>
+                        <div class="jour">5</div>
+                        <div class="jour">6</div>
+                        <div class="jour">7</div>
+                        <div class="jour">8</div>
+                        <div class="jour">9</div>
+                        <div class="jour">10</div>
+                        <div class="jour">11</div>
+                        <div class="jour">12</div>
+                        <div class="jour">13</div>
+                        <div class="jour">14</div>
+                        <div class="jour">15</div>
+                        <div class="jour">16</div>
+                        <div class="jour">17</div>
+                        <div class="jour">18</div>
+                        <div class="jour">19</div>
+                        <div class="jour">20</div>
+                        <div class="jour">21</div>
+                        <div class="jour">22</div>
+                        <div class="jour">23</div>
+                        <div class="jour">24</div>
+                        <div class="jour">25</div>
+                        <div class="jour">26</div>
+                        <div class="jour">27</div>
+                        <div class="jour">28</div>
+                    </div>
+                </div>
+
+                <div class="mois">
+                    <div class="moisTexte">Mars</div>
+                    <div class="grille-jours">
+                        <div class="jour-header">Dim</div>
+                        <div class="jour-header">Lun</div>
+                        <div class="jour-header">Mar</div>
+                        <div class="jour-header">Mer</div>
+                        <div class="jour-header">Jeu</div>
+                        <div class="jour-header">Ven</div>
+                        <div class="jour-header">Sam</div>
+
+                        <div class="jour">1</div>
+                        <div class="jour">2</div>
+                        <div class="jour">3</div>
+                        <div class="jour">4</div>
+                        <div class="jour">5</div>
+                        <div class="jour">6</div>
+                        <div class="jour">7</div>
+                        <div class="jour">8</div>
+                        <div class="jour">9</div>
+                        <div class="jour">10</div>
+                        <div class="jour">11</div>
+                        <div class="jour">12</div>
+                        <div class="jour">13</div>
+                        <div class="jour">14</div>
+                        <div class="jour">15</div>
+                        <div class="jour">16</div>
+                        <div class="jour">17</div>
+                        <div class="jour">18</div>
+                        <div class="jour">19</div>
+                        <div class="jour">20</div>
+                        <div class="jour">21</div>
+                        <div class="jour">22</div>
+                        <div class="jour">23</div>
+                        <div class="jour">24</div>
+                        <div class="jour">25</div>
+                        <div class="jour">26</div>
+                        <div class="jour">27</div>
+                        <div class="jour">28</div>
+                        <div class="jour">29</div>
+                        <div class="jour">30</div>
+                        <div class="jour">31</div>
+                    </div>
+                </div>
+
+                <div class="mois">
+                    <div class="moisTexte">Avril</div>
+                    <div class="grille-jours">
+                        <div class="jour-header">Dim</div>
+                        <div class="jour-header">Lun</div>
+                        <div class="jour-header">Mar</div>
+                        <div class="jour-header">Mer</div>
+                        <div class="jour-header">Jeu</div>
+                        <div class="jour-header">Ven</div>
+                        <div class="jour-header">Sam</div>
+
+                        <div class="vide"></div>
+                        <div class="vide"></div>
+                        <div class="vide"></div>
+                        <div class="jour">1</div>
+                        <div class="jour">2</div>
+                        <div class="jour ferie" title="Vendredi Saint">3</div>
+                        <div class="jour">4</div>
+                        <div class="jour">5</div>
+                        <div class="jour ferie" title="Lundi de Pâques">6</div>
+                        <div class="jour">7</div>
+                        <div class="jour">8</div>
+                        <div class="jour">9</div>
+                        <div class="jour">10</div>
+                        <div class="jour">11</div>
+                        <div class="jour">12</div>
+                        <div class="jour">13</div>
+                        <div class="jour">14</div>
+                        <div class="jour">15</div>
+                        <div class="jour">16</div>
+                        <div class="jour">17</div>
+                        <div class="jour">18</div>
+                        <div class="jour">19</div>
+                        <div class="jour">20</div>
+                        <div class="jour">21</div>
+                        <div class="jour">22</div>
+                        <div class="jour">23</div>
+                        <div class="jour">24</div>
+                        <div class="jour">25</div>
+                        <div class="jour">26</div>
+                        <div class="jour">27</div>
+                        <div class="jour">28</div>
+                        <div class="jour">29</div>
+                        <div class="jour">30</div>
+                    </div>
+                </div>
+
+                <div class="mois">
+                    <div class="moisTexte">Mai</div>
+                    <div class="grille-jours">
+                        <div class="jour-header">Dim</div>
+                        <div class="jour-header">Lun</div>
+                        <div class="jour-header">Mar</div>
+                        <div class="jour-header">Mer</div>
+                        <div class="jour-header">Jeu</div>
+                        <div class="jour-header">Ven</div>
+                        <div class="jour-header">Sam</div>
+
+                        <div class="vide"></div>
+                        <div class="vide"></div>
+                        <div class="vide"></div>
+                        <div class="vide"></div>
+                        <div class="vide"></div>
+                        <div class="jour">1</div>
+                        <div class="jour">2</div>
+                        <div class="jour">3</div>
+                        <div class="jour">4</div>
+                        <div class="jour">5</div>
+                        <div class="jour">6</div>
+                        <div class="jour">7</div>
+                        <div class="jour">8</div>
+                        <div class="jour">9</div>
+                        <div class="jour">10</div>
+                        <div class="jour">11</div>
+                        <div class="jour">12</div>
+                        <div class="jour">13</div>
+                        <div class="jour">14</div>
+                        <div class="jour">15</div>
+                        <div class="jour">16</div>
+                        <div class="jour">17</div>
+                        <div class="jour ferie" title="Journée nationale des patriotes">18</div>
+                        <div class="jour">19</div>
+                        <div class="jour">20</div>
+                        <div class="jour">21</div>
+                        <div class="jour">22</div>
+                        <div class="jour">23</div>
+                        <div class="jour">24</div>
+                        <div class="jour">25</div>
+                        <div class="jour">26</div>
+                        <div class="jour">27</div>
+                        <div class="jour">28</div>
+                        <div class="jour">29</div>
+                        <div class="jour">30</div>
+                        <div class="jour">31</div>
+                    </div>
+                </div>
+
+                <div class="mois">
+                    <div class="moisTexte">Juin</div>
+                    <div class="grille-jours">
+                        <div class="jour-header">Dim</div>
+                        <div class="jour-header">Lun</div>
+                        <div class="jour-header">Mar</div>
+                        <div class="jour-header">Mer</div>
+                        <div class="jour-header">Jeu</div>
+                        <div class="jour-header">Ven</div>
+                        <div class="jour-header">Sam</div>
+
+                        <div class="vide"></div>
+                        <div class="jour">1</div>
+                        <div class="jour">2</div>
+                        <div class="jour">3</div>
+                        <div class="jour">4</div>
+                        <div class="jour">5</div>
+                        <div class="jour">6</div>
+                        <div class="jour">7</div>
+                        <div class="jour">8</div>
+                        <div class="jour">9</div>
+                        <div class="jour">10</div>
+                        <div class="jour">11</div>
+                        <div class="jour">12</div>
+                        <div class="jour">13</div>
+                        <div class="jour">14</div>
+                        <div class="jour">15</div>
+                        <div class="jour">16</div>
+                        <div class="jour">17</div>
+                        <div class="jour">18</div>
+                        <div class="jour">19</div>
+                        <div class="jour">20</div>
+                        <div class="jour">21</div>
+                        <div class="jour">22</div>
+                        <div class="jour">23</div>
+                        <div class="jour ferie" title="Fête nationale du Québec">24</div>
+                        <div class="jour">25</div>
+                        <div class="jour">26</div>
+                        <div class="jour">27</div>
+                        <div class="jour">28</div>
+                        <div class="jour">29</div>
+                        <div class="jour">30</div>
+                    </div>
+                </div>
+
+                <div class="mois">
+                    <div class="moisTexte">Juillet</div>
+                    <div class="grille-jours">
+                        <div class="jour-header">Dim</div>
+                        <div class="jour-header">Lun</div>
+                        <div class="jour-header">Mar</div>
+                        <div class="jour-header">Mer</div>
+                        <div class="jour-header">Jeu</div>
+                        <div class="jour-header">Ven</div>
+                        <div class="jour-header">Sam</div>
+
+                        <div class="vide"></div>
+                        <div class="vide"></div>
+                        <div class="vide"></div>
+                        <div class="jour ferie" title="Fête du Canada">1</div>
+                        <div class="jour">2</div>
+                        <div class="jour">3</div>
+                        <div class="jour">4</div>
+                        <div class="jour">5</div>
+                        <div class="jour">6</div>
+                        <div class="jour">7</div>
+                        <div class="jour">8</div>
+                        <div class="jour">9</div>
+                        <div class="jour">10</div>
+                        <div class="jour">11</div>
+                        <div class="jour">12</div>
+                        <div class="jour">13</div>
+                        <div class="jour">14</div>
+                        <div class="jour">15</div>
+                        <div class="jour">16</div>
+                        <div class="jour">17</div>
+                        <div class="jour">18</div>
+                        <div class="jour">19</div>
+                        <div class="jour">20</div>
+                        <div class="jour">21</div>
+                        <div class="jour">22</div>
+                        <div class="jour">23</div>
+                        <div class="jour">24</div>
+                        <div class="jour">25</div>
+                        <div class="jour">26</div>
+                        <div class="jour">27</div>
+                        <div class="jour">28</div>
+                        <div class="jour">29</div>
+                        <div class="jour">30</div>
+                        <div class="jour">31</div>
+                    </div>
+                </div>
+
+                <div class="mois">
+                    <div class="moisTexte">Août</div>
+                    <div class="grille-jours">
+                        <div class="jour-header">Dim</div>
+                        <div class="jour-header">Lun</div>
+                        <div class="jour-header">Mar</div>
+                        <div class="jour-header">Mer</div>
+                        <div class="jour-header">Jeu</div>
+                        <div class="jour-header">Ven</div>
+                        <div class="jour-header">Sam</div>
+
+                        <div class="vide"></div>
+                        <div class="vide"></div>
+                        <div class="vide"></div>
+                        <div class="vide"></div>
+                        <div class="vide"></div>
+                        <div class="vide"></div>
+                        <div class="jour">1</div>
+                        <div class="jour">2</div>
+                        <div class="jour">3</div>
+                        <div class="jour">4</div>
+                        <div class="jour">5</div>
+                        <div class="jour">6</div>
+                        <div class="jour">7</div>
+                        <div class="jour">8</div>
+                        <div class="jour">9</div>
+                        <div class="jour">10</div>
+                        <div class="jour">11</div>
+                        <div class="jour">12</div>
+                        <div class="jour">13</div>
+                        <div class="jour">14</div>
+                        <div class="jour">15</div>
+                        <div class="jour">16</div>
+                        <div class="jour">17</div>
+                        <div class="jour">18</div>
+                        <div class="jour">19</div>
+                        <div class="jour">20</div>
+                        <div class="jour">21</div>
+                        <div class="jour">22</div>
+                        <div class="jour">23</div>
+                        <div class="jour">24</div>
+                        <div class="jour">25</div>
+                        <div class="jour">26</div>
+                        <div class="jour">27</div>
+                        <div class="jour">28</div>
+                        <div class="jour">29</div>
+                        <div class="jour">30</div>
+                        <div class="jour">31</div>
+                    </div>
+                </div>
+
+                <div class="mois">
+                    <div class="moisTexte">Septembre</div>
+                    <div class="grille-jours">
+                        <div class="jour-header">Dim</div>
+                        <div class="jour-header">Lun</div>
+                        <div class="jour-header">Mar</div>
+                        <div class="jour-header">Mer</div>
+                        <div class="jour-header">Jeu</div>
+                        <div class="jour-header">Ven</div>
+                        <div class="jour-header">Sam</div>
+
+                        <div class="vide"></div>
+                        <div class="vide"></div>
+                        <div class="jour">1</div>
+                        <div class="jour">2</div>
+                        <div class="jour">3</div>
+                        <div class="jour">4</div>
+                        <div class="jour">5</div>
+                        <div class="jour">6</div>
+                        <div class="jour ferie" title="Fête du Travail">7</div>
+                        <div class="jour">8</div>
+                        <div class="jour">9</div>
+                        <div class="jour">10</div>
+                        <div class="jour">11</div>
+                        <div class="jour">12</div>
+                        <div class="jour">13</div>
+                        <div class="jour">14</div>
+                        <div class="jour">15</div>
+                        <div class="jour">16</div>
+                        <div class="jour">17</div>
+                        <div class="jour">18</div>
+                        <div class="jour">19</div>
+                        <div class="jour">20</div>
+                        <div class="jour">21</div>
+                        <div class="jour">22</div>
+                        <div class="jour">23</div>
+                        <div class="jour">24</div>
+                        <div class="jour">25</div>
+                        <div class="jour">26</div>
+                        <div class="jour">27</div>
+                        <div class="jour">28</div>
+                        <div class="jour">29</div>
+                        <div class="jour">30</div>
+                    </div>
+                </div>
+
+                <div class="mois">
+                    <div class="moisTexte">Octobre</div>
+                    <div class="grille-jours">
+                        <div class="jour-header">Dim</div>
+                        <div class="jour-header">Lun</div>
+                        <div class="jour-header">Mar</div>
+                        <div class="jour-header">Mer</div>
+                        <div class="jour-header">Jeu</div>
+                        <div class="jour-header">Ven</div>
+                        <div class="jour-header">Sam</div>
+
+                        <div class="vide"></div>
+                        <div class="vide"></div>
+                        <div class="vide"></div>
+                        <div class="vide"></div>
+                        <div class="jour">1</div>
+                        <div class="jour">2</div>
+                        <div class="jour">3</div>
+                        <div class="jour">4</div>
+                        <div class="jour">5</div>
+                        <div class="jour">6</div>
+                        <div class="jour">7</div>
+                        <div class="jour">8</div>
+                        <div class="jour">9</div>
+                        <div class="jour">10</div>
+                        <div class="jour">11</div>
+                        <div class="jour ferie" title="Action de grâce">12</div>
+                        <div class="jour">13</div>
+                        <div class="jour">14</div>
+                        <div class="jour">15</div>
+                        <div class="jour">16</div>
+                        <div class="jour">17</div>
+                        <div class="jour">18</div>
+                        <div class="jour">19</div>
+                        <div class="jour">20</div>
+                        <div class="jour">21</div>
+                        <div class="jour">22</div>
+                        <div class="jour">23</div>
+                        <div class="jour">24</div>
+                        <div class="jour">25</div>
+                        <div class="jour">26</div>
+                        <div class="jour">27</div>
+                        <div class="jour">28</div>
+                        <div class="jour">29</div>
+                        <div class="jour">30</div>
+                        <div class="jour">31</div>
+                    </div>
+                </div>
+
+                <div class="mois">
+                    <div class="moisTexte">Novembre</div>
+                    <div class="grille-jours">
+                        <div class="jour-header">Dim</div>
+                        <div class="jour-header">Lun</div>
+                        <div class="jour-header">Mar</div>
+                        <div class="jour-header">Mer</div>
+                        <div class="jour-header">Jeu</div>
+                        <div class="jour-header">Ven</div>
+                        <div class="jour-header">Sam</div>
+
+                        <div class="jour">1</div>
+                        <div class="jour">2</div>
+                        <div class="jour">3</div>
+                        <div class="jour">4</div>
+                        <div class="jour">5</div>
+                        <div class="jour">6</div>
+                        <div class="jour">7</div>
+                        <div class="jour">8</div>
+                        <div class="jour">9</div>
+                        <div class="jour">10</div>
+                        <div class="jour">11</div>
+                        <div class="jour">12</div>
+                        <div class="jour">13</div>
+                        <div class="jour">14</div>
+                        <div class="jour">15</div>
+                        <div class="jour">16</div>
+                        <div class="jour">17</div>
+                        <div class="jour">18</div>
+                        <div class="jour">19</div>
+                        <div class="jour">20</div>
+                        <div class="jour">21</div>
+                        <div class="jour">22</div>
+                        <div class="jour">23</div>
+                        <div class="jour">24</div>
+                        <div class="jour">25</div>
+                        <div class="jour">26</div>
+                        <div class="jour">27</div>
+                        <div class="jour">28</div>
+                        <div class="jour">29</div>
+                        <div class="jour">30</div>
+                    </div>
+                </div>
+
+                <div class="mois">
+                    <div class="moisTexte">Décembre</div>
+                    <div class="grille-jours">
+                        <div class="jour-header">Dim</div>
+                        <div class="jour-header">Lun</div>
+                        <div class="jour-header">Mar</div>
+                        <div class="jour-header">Mer</div>
+                        <div class="jour-header">Jeu</div>
+                        <div class="jour-header">Ven</div>
+                        <div class="jour-header">Sam</div>
+
+                        <div class="vide"></div>
+                        <div class="vide"></div>
+                        <div class="jour">1</div>
+                        <div class="jour">2</div>
+                        <div class="jour">3</div>
+                        <div class="jour">4</div>
+                        <div class="jour">5</div>
+                        <div class="jour">6</div>
+                        <div class="jour">7</div>
+                        <div class="jour">8</div>
+                        <div class="jour">9</div>
+                        <div class="jour">10</div>
+                        <div class="jour">11</div>
+                        <div class="jour">12</div>
+                        <div class="jour">13</div>
+                        <div class="jour">14</div>
+                        <div class="jour">15</div>
+                        <div class="jour">16</div>
+                        <div class="jour">17</div>
+                        <div class="jour">18</div>
+                        <div class="jour">19</div>
+                        <div class="jour">20</div>
+                        <div class="jour">21</div>
+                        <div class="jour">22</div>
+                        <div class="jour">23</div>
+                        <div class="jour">24</div>
+                        <div class="jour ferie" title="Noël">25</div>
+                        <div class="jour ferie" title="Lendemain de Noël">26</div>
+                        <div class="jour">27</div>
+                        <div class="jour">28</div>
+                        <div class="jour">29</div>
+                        <div class="jour">30</div>
+                        <div class="jour">31</div>
+                    </div>
+                </div>
+
+            </div>
 
         </div>
-
-        <div class="footer">
-            Site conçu et rédigé par [Ahmed Nabil Frahilia] && [Nicolas Chourot] - Collège Lionel-Groulx - Automne 2025
+        <div class="Footer">
+            Calendrier
         </div>
-
     </div>
 </body>
 
